@@ -6,8 +6,9 @@ arr.each do |letter|
 end
 
 # Each loop with index
-arr.each_with_index do |letter, index|
+arr.each_with_index do |letter,index|
 	puts "#{index + 1}. This is letter #{letter}"
 end
+
 
 

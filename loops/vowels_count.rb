@@ -1,25 +1,25 @@
-# def count_vowels (input)
-# # user_input Gurban
-# 	input = input.downcase
-# 	vowel_list = ["a","e","u","i","o"]
+def count_vowels (input)
+# user_input Gurban
+	input = input.downcase
+	vowel_list = ["a","e","u","i","o"]
 
-# 	loop_count = 0
-# 	vowel_count = 0
+	loop_count = 0
+	vowel_count = 0
 
-# 	while (loop_count < input.size)
-# 		if vowel_list.include?(input[loop_count])
-# 			vowel_count = vowel_count + 1 
-# 		end
-# 		loop_count = loop_count + 1
-# 	end
-# 	return vowel_count
-# end
+	while (loop_count < input.size)
+		if vowel_list.include?(input[loop_count])
+			vowel_count = vowel_count + 1 
+		end
+		loop_count = loop_count + 1
+	end
+	return vowel_count
+end
 
-# puts "please enter words to count vowels"
+puts "please enter words to count vowels"
 
-# words = gets.chomp
+words = gets.chomp
 
-# puts "there are #{count_vowels(words)} vowels in this words"
+puts "there are #{count_vowels(words)} vowels in this words"
 
 class String
 

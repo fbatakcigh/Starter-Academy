@@ -1,0 +1,24 @@
+def least_cm(x,y)
+	x_v = x
+	y_v = y
+	least_cm_v = 0
+	if (x%y==0 || y%x==0)
+		if x>y 
+			least_cm_v = x
+		else
+			least_cm_v = y
+		end
+	elsif x>y
+		while (x_v%y>0) do
+			x_v = x_v + x
+		end
+		least_cm_v = x_v
+	else
+		while (y_v%x>0) do
+			y_v = y_v + y
+		end
+		least_cm_v = y_v
+	end
+end
+
+puts least_cm(46578,82342)
